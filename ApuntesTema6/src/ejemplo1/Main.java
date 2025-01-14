@@ -15,7 +15,7 @@ public class Main {
 		c2.kilometraje = 200;
 		
 		Persona p = new Persona();
-		p.nombre = "Vladi";
+		
 		p.edad = 32;	
 		p.estatura = 1.76;
 		

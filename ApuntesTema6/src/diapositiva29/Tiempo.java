@@ -1,22 +1,27 @@
 package diapositiva29;
 
+import java.util.Scanner;
+
 public class Tiempo {
 	
-	int segundos;
+	private int segundos;
 	
+	//Convertir de hh, mm y ss a segundos
 	public Tiempo(int horas, int minutos, int segundos) {
+		Scanner sc;
 		this.segundos = horas*3600 + minutos*60 + segundos;
 	}
 
-	void suma(Tiempo t) {
+	public void suma(Tiempo t) {
 		this.segundos += t.segundos;
 	}
 	
-	void resta(Tiempo t) {
+	public void resta(Tiempo t) {
 		this.segundos -= t.segundos;
 	}
 	
-	void mostrar() {
+	//Convertimos segundos en hh, mm y ss
+	public void mostrar() {
 		int horas = this.segundos / 3600;
 		int minutos = (this.segundos % 3600) / 60;
 		int segundos = this.segundos % 60;
