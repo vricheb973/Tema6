@@ -15,7 +15,7 @@ public class Pizza {
 	public Pizza(String tamano, String tipo) {
 		setTamano(tamano);
 		setTipo(tipo);
-		this.estado = Estado.pedida;
+		this.estado = Estado.PEDIDA;
 		Pizza.pedidas++;
 	}
 	
@@ -47,11 +47,11 @@ public class Pizza {
 	
 	//Métodos
 	public void servir() {
-		if(this.estado.equals(Estado.servida)) {
+		if(this.estado.equals(Estado.SERVIDA)) {
 			throw new IllegalStateException("La pizza ya estaba servida. ");
 		}
 		
-		this.estado = Estado.servida;
+		this.estado = Estado.SERVIDA;
 		Pizza.servidas++;
 	}
 	
