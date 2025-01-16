@@ -12,7 +12,6 @@ public class Main {
 		
 		CuentaCorriente cc2 = new CuentaCorriente("46546545T", "Pepe", g1);
 		
-		
 		cc1.mostrarInformacion();
 		cc2.mostrarInformacion();
 		

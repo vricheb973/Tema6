@@ -110,6 +110,9 @@ public class CuentaCorriente {
 		if(this.gestor != null) {
 			System.out.println("Gestor: " + this.gestor.getNombre());
 		}
+		else {
+			System.out.println("Gestor: Sin asignar");
+		}
 		System.out.println("Banco: " + CuentaCorriente.nombreBanco);
 	}
 	
