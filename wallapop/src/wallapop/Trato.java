@@ -54,6 +54,31 @@ public class Trato {
 			throw new IllegalArgumentException("No se puede cambiar el comprador en un trato validado. ");
 		}
 		this.producto = producto;
-	}	
+	}
+	
+	public void validar(Comprador c) {
+		//Validar que c es el comprador del trato
+		//Que no esté validado ya
+		//Pongo la firma del comprador a true
+		
+		//Si el vendedor también ha firmado, movemos los productos
+	}
+	
+	public void validar(Vendedor v) {
+		//Validar que v es el vendedor del trato
+		//Que no esté validado ya
+		//Pongo la firma del vendedor a true
+		
+		//Si el comprador también ha firmado, movemos los productos
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
