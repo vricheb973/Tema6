@@ -60,6 +60,9 @@ public class Tren {
 	}
 	
 	public void removeVagon(Vagon v) {
+		if(v == null) {
+			throw new IllegalArgumentException("El vagón no puede ser null. ");
+		}
 		boolean esta = false;
 		//Que el vagon esté en la lista
 		for(Vagon vag : this.vagones) {
